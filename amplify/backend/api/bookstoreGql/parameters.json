@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "bookstoreGql",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authbookstore77045264",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
